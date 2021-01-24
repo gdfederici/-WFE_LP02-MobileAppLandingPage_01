@@ -1,0 +1,114 @@
+/*** VARIABLES ***/
+$breakpoint: 1024px+1px;
+$box-m: 360px;
+$box-d: 1440px;
+
+/*** ------------------------- *** ------------------------- *** ------------------------- *** ------------------------- ***/
+
+/*** BASECAMP ***/
+body {
+    margin: 0 auto 0 auto;
+}
+@media screen and (min-width: $breakpoint) {
+    body {
+        max-width: $box-d;
+    }
+}
+.learn-more {
+    display: block;
+}
+
+
+/*** BOXED STYLE ***/
+.page-layout {
+    width: $box-m;
+    margin: 0 auto 0 auto;
+}
+@media screen and (min-width: $breakpoint) {
+    .page-layout {
+        width: 100%;
+    }
+}
+
+
+/*** HEADER ***/
+.header {
+    padding: 32px 20px 59px 20px;
+    & h1 {
+        margin: 86px 0 33px 0;
+    }
+    &__storedownload {
+        margin: 50px 0 0 0;
+        display: flex;
+        justify-content: space-between;
+        & a {
+            display: block;
+            &:hover {
+                transform: scale(1.02);
+            }
+        }
+    }
+}
+@media screen and (min-width: $breakpoint) {
+    .header {
+        padding: 61px 163px 164px 163px;
+        width: 50%;
+        max-width: 546px;
+        & h1 {
+            margin: 133px 0 30px 0;
+        }
+        & p {
+            max-width: 453px;
+        }
+        &__storedownload {
+            justify-content: flex-start;
+            & a:first-child {
+                margin-right: 36px;
+            }
+        }
+    }
+}
+
+
+/*** WHAT IT DOES ***/
+.what-it-does {
+    padding: 54px 0 22px 0;
+    & h2 {
+        margin: 27px auto 20px auto;
+    }
+    & p {
+        margin-bottom: 22px;
+    }
+}
+.what-it-does_demo {
+    & picture, & img {
+            margin: 42px auto 0px auto;
+            width: 100%; 
+            max-width: 565px;
+            height: auto;
+    }
+}
+@media screen and (min-width: $breakpoint) {
+    .row_what-it-does {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        max-height: 592px;
+    }
+    .what-it-does {
+        padding: 133px 217px 117px 0;
+        max-width: 426px;
+        & h2 {
+            margin: 27px auto 27px auto;
+        }
+        & p {
+            margin-bottom: 23px;
+            width: 407px;
+        }
+    }
+    .what-it-does_demo {
+        & picture, & img {
+            margin: 85px 0 0px 25px;
+        }
+    }
+}

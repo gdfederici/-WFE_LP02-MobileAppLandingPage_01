@@ -1,0 +1,129 @@
+/*** VARIABLES ***/
+/*** ------------------------- *** ------------------------- *** ------------------------- *** ------------------------- ***/
+/*** BASECAMP ***/
+body {
+  margin: 0 auto 0 auto;
+}
+
+@media screen and (min-width: 1025px) {
+  body {
+    max-width: 1440px;
+  }
+}
+
+.learn-more {
+  display: block;
+}
+
+/*** BOXED STYLE ***/
+.page-layout {
+  width: 360px;
+  margin: 0 auto 0 auto;
+}
+
+@media screen and (min-width: 1025px) {
+  .page-layout {
+    width: 100%;
+  }
+}
+
+/*** HEADER ***/
+.header {
+  padding: 32px 20px 59px 20px;
+}
+
+.header h1 {
+  margin: 86px 0 33px 0;
+}
+
+.header__storedownload {
+  margin: 50px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__storedownload a {
+  display: block;
+}
+
+.header__storedownload a:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+@media screen and (min-width: 1025px) {
+  .header {
+    padding: 61px 163px 164px 163px;
+    width: 50%;
+    max-width: 546px;
+  }
+  .header h1 {
+    margin: 133px 0 30px 0;
+  }
+  .header p {
+    max-width: 453px;
+  }
+  .header__storedownload {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .header__storedownload a:first-child {
+    margin-right: 36px;
+  }
+}
+
+/*** WHAT IT DOES ***/
+.what-it-does {
+  padding: 54px 0 22px 0;
+}
+
+.what-it-does h2 {
+  margin: 27px auto 20px auto;
+}
+
+.what-it-does p {
+  margin-bottom: 22px;
+}
+
+.what-it-does_demo picture, .what-it-does_demo img {
+  margin: 42px auto 0px auto;
+  width: 100%;
+  max-width: 565px;
+  height: auto;
+}
+
+@media screen and (min-width: 1025px) {
+  .row_what-it-does {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-height: 592px;
+  }
+  .what-it-does {
+    padding: 133px 217px 117px 0;
+    max-width: 426px;
+  }
+  .what-it-does h2 {
+    margin: 27px auto 27px auto;
+  }
+  .what-it-does p {
+    margin-bottom: 23px;
+    width: 407px;
+  }
+  .what-it-does_demo picture, .what-it-does_demo img {
+    margin: 85px 0 0px 25px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

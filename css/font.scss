@@ -1,0 +1,103 @@
+/*** FONTS ***/
+/* lato-regular - latin */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('../fonts/lato-v17-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/lato-v17-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-display: swap;
+}
+/* lato-700 - latin */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+        url('../fonts/lato-v17-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/lato-v17-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-display: swap;
+}
+
+/*** VARIABLES ***/
+$breakpoint: 1024px+1px;
+$font-h: 'Lato', Arial, Helvetica, sans-serif;
+$font-text: 'Lato', Arial, Helvetica, sans-serif;
+$font_normal: 400;
+$font_bold: 700;
+$font-size_normal: 1.6rem;
+$font-size_small: 1.4rem;
+$font-size_h1: 3.0rem;
+$font-size_h2: 2.8rem;
+$font-size_header-h1_d: $font-size_h1+0.6rem;
+$font-size_header_d: $font-size_normal+0.2rem;
+$line-height_normal: 2.3rem;
+$line-height_small: 1.85rem;
+$line-height_h1: 4.0rem;
+$line-height_h2: 3.7rem;
+$line-height_header-h1_d: $line-height_h1+0.8rem;
+$line-height_header_d: $line-height_normal+0.3rem;
+
+/*** EXTEND PLACEHOLDER ***/
+%header-maior {
+    font: {
+        family: $font-h;
+        weight: $font_bold;
+    }
+}
+%header-minor {
+    font: {
+        family: $font-h;
+        weight: $font_bold;
+    }
+    text-transform: uppercase;
+}
+
+/*** ------------------------- *** ------------------------- *** ------------------------- *** ------------------------- ***/
+
+/*** BASECAMP ***/
+body {
+    font: {
+        family: $font-text;
+        weight: $font_normal;
+        size: $font-size_normal;
+    }
+    line-height: $line-height_normal;
+    text-align: center;
+}
+@media screen and (min-width: $breakpoint) {
+    body {
+        text-align: left;
+    }
+}
+h1 {
+    @extend %header-maior;
+    font-size: $font-size_h1;
+    line-height: $line-height_h1;
+    letter-spacing: 0.03em;
+}
+@media screen and (min-width: $breakpoint) {
+    h1 {
+        font-size: $font-size_header-h1_d;
+        line-height: $line-height_header-h1_d;
+    }
+}
+h2 {
+    @extend %header-maior;
+    font-size: $font-size_h2;
+    line-height: $line-height_h2;
+}
+h3 {
+    @extend %header-minor;
+    font-size: $font-size_normal;
+}
+
+
+/*** HEADER ***/
+@media screen and (min-width: $breakpoint) {
+    .header p {
+        font-size: $font-size_header_d;
+        line-height: $line-height_header_d;
+    }
+}
