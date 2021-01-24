@@ -92,6 +92,9 @@ h3 {
     @extend %header-minor;
     font-size: $font-size_normal;
 }
+a {
+    font-weight: $font_bold;
+}
 
 
 /*** HEADER ***/

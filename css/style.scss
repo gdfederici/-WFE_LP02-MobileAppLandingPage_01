@@ -99,7 +99,7 @@ body {
         padding: 133px 217px 117px 0;
         max-width: 426px;
         & h2 {
-            margin: 27px auto 27px auto;
+            margin: 27px auto;
         }
         & p {
             margin-bottom: 23px;
@@ -109,6 +109,27 @@ body {
     .what-it-does_demo {
         & picture, & img {
             margin: 85px 0 0px 25px;
+        }
+    }
+}
+
+
+/*** GET STARTED ***/
+.get-started {
+    padding: 62px 20px 594px 20px;
+    & h2 {
+        margin: 27px auto;
+    }
+    & p {
+        margin-bottom: 25px;
+        width: 320px;
+    }
+}
+@media screen and (min-width: $breakpoint) {
+    .get-started {
+        padding: 217px 0px 171px 163px;
+        & p {
+            width: 480px;
         }
     }
 }

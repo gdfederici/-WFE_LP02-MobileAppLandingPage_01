@@ -116,7 +116,7 @@ body {
     max-width: 426px;
   }
   .what-it-does h2 {
-    margin: 27px auto 27px auto;
+    margin: 27px auto;
   }
   .what-it-does p {
     margin-bottom: 23px;
@@ -124,6 +124,29 @@ body {
   }
   .what-it-does_demo picture, .what-it-does_demo img {
     margin: 85px 0 0px 25px;
+  }
+}
+
+/*** GET STARTED ***/
+.get-started {
+  padding: 62px 20px 594px 20px;
+}
+
+.get-started h2 {
+  margin: 27px auto;
+}
+
+.get-started p {
+  margin-bottom: 25px;
+  width: 320px;
+}
+
+@media screen and (min-width: 1025px) {
+  .get-started {
+    padding: 217px 0px 171px 163px;
+  }
+  .get-started p {
+    width: 480px;
   }
 }
 /*# sourceMappingURL=style.css.map */

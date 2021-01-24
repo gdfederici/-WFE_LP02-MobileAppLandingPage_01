@@ -68,3 +68,14 @@ header {
         background: linear-gradient(-90deg, rgba(255,255,255,1) 10%, rgba(255,255,255,0)), url("../img/back_whatitdoes.png") center;
     }
 }
+
+
+/*** GET STARTED ***/
+.get-started {
+    background: url("../img/frame_getstarted_m.jpg") no-repeat center bottom;
+}
+@media screen and (min-width: $breakpoint) {
+    .get-started {
+        background: url("../img/frame_getstarted.png") no-repeat;
+    }
+}

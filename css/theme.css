@@ -65,7 +65,17 @@ header {
   .what-it-does_demo {
     background: -webkit-gradient(linear, right top, left top, color-stop(10%, white), to(rgba(255, 255, 255, 0))), url("../img/back_whatitdoes.png") center;
     background: linear-gradient(-90deg, white 10%, rgba(255, 255, 255, 0)), url("../img/back_whatitdoes.png") center;
-    /* problema fascia di pixel sopra sotto */
+  }
+}
+
+/*** GET STARTED ***/
+.get-started {
+  background: url("../img/frame_getstarted_m.jpg") no-repeat center bottom;
+}
+
+@media screen and (min-width: 1025px) {
+  .get-started {
+    background: url("../img/frame_getstarted.png") no-repeat;
   }
 }
 /*# sourceMappingURL=theme.css.map */
