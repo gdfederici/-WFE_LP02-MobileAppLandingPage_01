@@ -46,8 +46,3 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
-/* Extra GDFederici */
-:root {
-    font-size: 62.5%; /* px->rem in base 10 */
-}

@@ -1,4 +1,9 @@
 /*** FONTS ***/
+
+:root {
+    font-size: 62.5%; /* px->rem in base 10 */
+}
+
 /* lato-regular - latin */
 @font-face {
     font-family: 'Lato';
@@ -79,8 +84,8 @@ h1 {
 }
 @media screen and (min-width: $breakpoint) {
     h1 {
-        font-size: $font-size_header-h1_d;
-        line-height: $line-height_header-h1_d;
+        font-size: $font-size_h1+0.6rem;
+        line-height: $line-height_h1+0.8rem;
     }
 }
 h2 {
@@ -100,7 +105,15 @@ a {
 /*** HEADER ***/
 @media screen and (min-width: $breakpoint) {
     .header p {
-        font-size: $font-size_header_d;
-        line-height: $line-height_header_d;
+        font-size: $font-size_normal+0.2rem;
+        line-height: $line-height_normal+0.3rem;
+    }
+}
+
+
+/*** FEATURES ***/
+@media screen and (min-width: $breakpoint) {
+    .features h2 {
+        text-align: center;
     }
 }

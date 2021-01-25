@@ -1,0 +1,154 @@
+/*** VARIABLES ***/
+$breakpoint: 1024px+1px;
+$color-h: #333333;
+$color-text_dark: #4f4f4f;
+$color-text_light: #ffffff;
+$color-a: #00adee;
+$color-hover: #5282f0;
+$color-back_header: #f4f6f9;
+$color-back_loghi: #fafafa;
+$color-back_footer: #00adee;
+$color-back_row1: #ffffff;
+$color-back_row2: #fafafa;
+
+/*** ------------------------- *** ------------------------- *** ------------------------- *** ------------------------- ***/
+
+/*** BASECAMP ***/
+body {
+    color: $color-text_dark;
+    background-color: #E5E5E5;
+}
+header {
+    background-color: $color-back_header;
+}
+.row {
+    &_backcolor1 {
+        background-color: $color-back_row1;
+    }
+    &_backcolor2 {
+        background-color: $color-back_row2;
+    }
+}
+footer {
+    background: $color-back_footer;
+    color: $color-text_light;
+}
+h1, h2 {
+    color: $color-h;
+}
+h3 {
+    color: $color-a;
+}
+a {
+    text-decoration: none;
+    color: $color-a;
+    &:hover {
+        text-decoration: underline;
+        color: $color-hover;
+    }
+}
+
+
+/*** HEADER ***/
+header {
+    background-color: $color-back_header;
+}
+@media screen and (min-width: $breakpoint) {
+    header {
+        background: $color-back_header url("../img/frame_cta1.png") no-repeat right;
+    }
+}
+
+
+/*** WHAT IT DOES ***/
+.what-it-does_demo {
+    background: linear-gradient(rgba(255,255,255,1) 10%, rgba(255,255,255,0)), url("../img/back_whatitdoes.png") no-repeat center;
+    width: 100%;
+    background-size: cover;
+}
+@media screen and (min-width: $breakpoint) {
+    .what-it-does_demo {
+        background: linear-gradient(-90deg, rgba(255,255,255,1) 10%, rgba(255,255,255,0)), url("../img/back_whatitdoes.png") center;
+    }
+}
+
+
+/*** GET STARTED ***/
+.get-started {
+    background: url("../img/frame_getstarted_m.jpg") no-repeat center bottom;
+}
+@media screen and (min-width: $breakpoint) {
+    .get-started {
+        background: url("../img/frame_getstarted.png") no-repeat;
+    }
+}
+
+
+/*** FEATURES ***/
+.features {
+    &_video {
+        background: url("../img/ico_video_blu.svg") no-repeat center top;
+    }
+    &_notice {
+        background: url("../img/ico_notice_blu.svg") no-repeat center top;
+    }
+    &_hd {
+        background: url("../img/ico_hd_blu.svg") no-repeat center top;
+    }
+    &_flag {
+        background: url("../img/ico_flag_blu.svg") no-repeat center top;
+    }
+    &_pip {
+        background: url("../img/ico_pip_blu.svg") no-repeat center top;
+    }
+    &_update {
+        background: url("../img/ico_update_blu.svg") no-repeat center top;
+    }
+    &_vidiprinter {
+        background: url("../img/ico_vidiprinter_blu.svg") no-repeat center top;
+    }
+    &_match {
+        background: url("../img/ico_match_blu.svg") no-repeat center top;
+    }
+    &_personalize {
+        background: url("../img/ico_personalize_blu.svg") no-repeat center top;
+    }
+}
+@media screen and (min-width: $breakpoint) {
+    .row_features {
+        background: url("../img/back_features.jpg") no-repeat;
+        color: $color-text_light;
+        & h2 {
+            color: $color-text_light;
+        }
+    }
+    .features {
+        &_video {
+            background: url("../img/ico_video_white.svg") no-repeat left top;
+        }
+        &_notice {
+            background: url("../img/ico_notice_white.svg") no-repeat left top;
+        }
+        &_hd {
+            background: url("../img/ico_hd_white.svg") no-repeat left top;
+        }
+        &_flag {
+            background: url("../img/ico_flag_white.svg") no-repeat left top;
+        }
+        &_pip {
+            background: url("../img/ico_pip_white.svg") no-repeat left top;
+        }
+        &_update {
+            background: url("../img/ico_update_white.svg") no-repeat left top;
+        }
+        &_vidiprinter {
+            background: url("../img/ico_vidiprinter_white.svg") no-repeat left top;
+        }
+        &_match {
+            background: url("../img/ico_match_white.svg") no-repeat left top;
+        }
+        &_personalize {
+            background: url("../img/ico_personalize_white.svg") no-repeat left top;
+        }
+    }
+}
