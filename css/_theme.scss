@@ -11,6 +11,23 @@ $color-back_footer: #00adee;
 $color-back_row1: #ffffff;
 $color-back_row2: #fafafa;
 
+/*** MIXIN ***/
+@mixin arrow-nav($image) {
+    display: block;
+    border-radius: 50%;
+    min-width: 47px;
+    min-height: 47px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25), 0px 5px 10px rgba(0, 0, 0, 0.1);
+    background: url($image) no-repeat center;
+}
+
+@mixin point-nav($point-alfa) {
+    border-radius: 50%;
+    min-width: 11px;
+    min-height: 11px;
+    background-color: rgba(130, 130, 130, 1 - 0.15 * $point-alfa);
+}
+
 /*** ------------------------- *** ------------------------- *** ------------------------- *** ------------------------- ***/
 
 /*** BASECAMP ***/
@@ -67,6 +84,10 @@ header {
     background-size: cover;
 }
 @media screen and (min-width: $breakpoint) {
+    .what-it-does {
+        background-color: $color-back_row1;
+        z-index: 10;
+    }
     .what-it-does_demo {
         background: linear-gradient(-90deg, rgba(255,255,255,1) 10%, rgba(255,255,255,0)), url("../img/back_whatitdoes.png") center;
     }
@@ -116,7 +137,8 @@ header {
 }
 @media screen and (min-width: $breakpoint) {
     .row_features {
-        background: url("../img/back_features.jpg") no-repeat;
+        background: url("../img/back_features.jpg");
+        background-size: cover;
         color: $color-text_light;
         & h2 {
             color: $color-text_light;
@@ -150,5 +172,59 @@ header {
         &_personalize {
             background: url("../img/ico_personalize_white.svg") no-repeat left top;
         }
+    }
+}
+@media screen and (max-width: 1440px) {
+    .row_features {
+        background-size: auto;
+    }
+}
+
+
+/*** TESTIMONIALS ***/
+.testimonials-slider__single_user {
+    background: url("../img/testimonial_twitter.svg") no-repeat right;
+}
+.prev-testimonial {
+    @include arrow-nav("../img/ico-nav_prev.svg");
+    visibility: hidden;
+}
+.next-testimonial {
+    @include arrow-nav("../img/ico-nav_next.svg");
+}
+.testimonial-point { /* Possibile renderla un ciclo ? */
+    &_active-0 {
+        @include point-nav (0);
+    }
+    &_active-1 {
+        @include point-nav (1);
+    }
+    &_active-2 {
+        @include point-nav (2);
+    }
+    &_active-3 {
+        @include point-nav (3);
+    }
+    &_active-4 {
+        @include point-nav (4);
+    }
+    &_active-5 {
+        @include point-nav (5);
+    }
+    &_active-6 {
+        @include point-nav (6);
+    }
+}
+
+@media screen and (min-width: $breakpoint) {
+    .testimonials-slider::before {
+        background: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0) 20% 80%, rgba(255,255,255,1));
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        content: "\00a0";
+    }
+    .prev-testimonial {
+        visibility: visible;
     }
 }

@@ -97,7 +97,7 @@ h3 {
     @extend %header-minor;
     font-size: $font-size_normal;
 }
-a {
+a, strong {
     font-weight: $font_bold;
 }
 
@@ -114,6 +114,20 @@ a {
 /*** FEATURES ***/
 @media screen and (min-width: $breakpoint) {
     .features h2 {
+        text-align: center;
+    }
+}
+
+
+/*** TESTIMONIALS ***/
+.testimonials-slider__single_review {
+    font-size: $font-size_small;
+    line-height: $line-height_small;
+    text-align: left;
+}
+
+@media screen and (min-width: $breakpoint) {
+    .testimonials h2 {
         text-align: center;
     }
 }
