@@ -1,9 +1,33 @@
-@import 'font', 'theme';
+@import 'theme';
 
 /*** VARIABLES ***/
-$breakpoint: 1024px+1px;
 $box-m: 360px;
 $box-d: 1440px;
+
+/*** EXTEND PLACEHOLDER ***/
+%storebutton {
+    display: flex;
+    justify-content: space-between;
+    & a {
+        display: block;
+        &:hover {
+            transform: scale(1.02);
+        }
+    }
+    @media screen and (min-width: $breakpoint) {
+        justify-content: flex-start;
+    }
+}
+
+%mobilerowdesktopreverse {
+    @media screen and (min-width: $breakpoint) {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+}
+
+
 
 /*** ------------------------- *** ------------------------- *** ------------------------- *** ------------------------- ***/
 
@@ -40,15 +64,8 @@ body {
         margin: 86px 0 33px 0;
     }
     &__storedownload {
+        @extend %storebutton;
         margin: 50px 0 0 0;
-        display: flex;
-        justify-content: space-between;
-        & a {
-            display: block;
-            &:hover {
-                transform: scale(1.02);
-            }
-        }
     }
 }
 @media screen and (min-width: $breakpoint) {
@@ -62,7 +79,6 @@ body {
             max-width: 453px;
         }
         &__storedownload {
-            justify-content: flex-start;
             & a:first-child {
                 margin-right: 36px;
             }
@@ -72,6 +88,9 @@ body {
 
 
 /*** WHAT IT DOES ***/
+.row_what-it-does {
+    @extend %mobilerowdesktopreverse;
+}
 .what-it-does {
     padding: 54px 0 22px 0;
     & h2 {
@@ -89,11 +108,9 @@ body {
             height: auto;
     }
 }
+
 @media screen and (min-width: $breakpoint) {
     .row_what-it-does {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
         max-height: 592px;
     }
     .what-it-does {
@@ -281,7 +298,6 @@ body {
             margin: 0 auto 58px auto;
         }
         &__list {
-            display: flex;
             flex-wrap: nowrap;
             justify-content: space-between;
             &_50row {
@@ -296,5 +312,52 @@ body {
                 flex: auto;
             }
         }
+    }
+}
+
+
+/*** CTA2 ***/
+.row_cta2 {
+    @extend %mobilerowdesktopreverse;
+}
+.cta2 {
+    padding: 4px 20px 46px 20px;
+    & h2 {
+        margin: 15px auto;
+    }
+    & p {
+        margin: 0 auto 37px auto;
+        width: 309px;
+    }
+    &__storedownload {
+        @extend %storebutton;
+        margin: 37px 0 0 0;
+    }
+    &_background {
+        min-width: $box-m;
+        min-height: 261px;
+    }
+}
+
+@media screen and (min-width: $breakpoint) {
+    .cta2 {
+        padding: 94px 0 85px 77px;
+        & h2 {
+            margin-bottom: 35px;
+        }
+        & p {
+            margin: 0 0 38px 0;
+            width: 535px;
+        }
+        &__storedownload {
+            & a:first-child {
+                margin-right: 36px;
+            }
+        }
+        &_background {
+            min-width: 0;
+            min-height: 0;
+        }
+
     }
 }

@@ -1,5 +1,6 @@
+@import 'font';
+
 /*** VARIABLES ***/
-$breakpoint: 1024px+1px;
 $color-h: #333333;
 $color-text_dark: #4f4f4f;
 $color-text_light: #ffffff;
@@ -49,6 +50,12 @@ header {
 footer {
     background: $color-back_footer;
     color: $color-text_light;
+    & a {
+        color: $color-text_light;
+        &:hover {
+            color: $color-text_light;
+        }
+    }
 }
 h1, h2 {
     color: $color-h;
@@ -226,5 +233,22 @@ header {
     }
     .prev-testimonial {
         visibility: visible;
+    }
+}
+
+
+/*** CTA2 ***/
+.cta2_background {
+    background: url("../img/frame_cta2_m.png") no-repeat center bottom;
+    width: 100%;
+    background-size: cover;
+}
+@media screen and (min-width: $breakpoint) {
+    .cta2 {
+        
+    }
+    .cta2_background {
+        background: url("../img/frame_cta2.png") no-repeat left;
+        max-height: 483px;
     }
 }

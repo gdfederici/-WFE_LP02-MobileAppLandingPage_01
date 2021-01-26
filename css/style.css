@@ -140,6 +140,14 @@ footer {
   color: #ffffff;
 }
 
+footer a {
+  color: #ffffff;
+}
+
+footer a:hover {
+  color: #ffffff;
+}
+
 h1, h2 {
   color: #333333;
 }
@@ -374,7 +382,63 @@ header {
   }
 }
 
+/*** CTA2 ***/
+.cta2_background {
+  background: url("../img/frame_cta2_m.png") no-repeat center bottom;
+  width: 100%;
+  background-size: cover;
+}
+
+@media screen and (min-width: 1025px) {
+  .cta2_background {
+    background: url("../img/frame_cta2.png") no-repeat left;
+    max-height: 483px;
+  }
+}
+
 /*** VARIABLES ***/
+/*** EXTEND PLACEHOLDER ***/
+.header__storedownload, .cta2__storedownload {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__storedownload a, .cta2__storedownload a {
+  display: block;
+}
+
+.header__storedownload a:hover, .cta2__storedownload a:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+@media screen and (min-width: 1025px) {
+  .header__storedownload, .cta2__storedownload {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .row_what-it-does, .row_cta2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 /*** ------------------------- *** ------------------------- *** ------------------------- *** ------------------------- ***/
 /*** BASECAMP ***/
 body {
@@ -414,21 +478,6 @@ body {
 
 .header__storedownload {
   margin: 50px 0 0 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.header__storedownload a {
-  display: block;
-}
-
-.header__storedownload a:hover {
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
 }
 
 @media screen and (min-width: 1025px) {
@@ -441,11 +490,6 @@ body {
   }
   .header p {
     max-width: 453px;
-  }
-  .header__storedownload {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
   }
   .header__storedownload a:first-child {
     margin-right: 36px;
@@ -474,16 +518,6 @@ body {
 
 @media screen and (min-width: 1025px) {
   .row_what-it-does {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     max-height: 592px;
   }
   .what-it-does {
@@ -724,9 +758,6 @@ body {
     margin: 0 auto 58px auto;
   }
   .theytalk__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     -webkit-box-pack: justify;
@@ -749,6 +780,49 @@ body {
     -webkit-box-flex: 1;
         -ms-flex: auto;
             flex: auto;
+  }
+}
+
+/*** CTA2 ***/
+.cta2 {
+  padding: 4px 20px 46px 20px;
+}
+
+.cta2 h2 {
+  margin: 15px auto;
+}
+
+.cta2 p {
+  margin: 0 auto 37px auto;
+  width: 309px;
+}
+
+.cta2__storedownload {
+  margin: 37px 0 0 0;
+}
+
+.cta2_background {
+  min-width: 360px;
+  min-height: 261px;
+}
+
+@media screen and (min-width: 1025px) {
+  .cta2 {
+    padding: 94px 0 85px 77px;
+  }
+  .cta2 h2 {
+    margin-bottom: 35px;
+  }
+  .cta2 p {
+    margin: 0 0 38px 0;
+    width: 535px;
+  }
+  .cta2__storedownload a:first-child {
+    margin-right: 36px;
+  }
+  .cta2_background {
+    min-width: 0;
+    min-height: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
