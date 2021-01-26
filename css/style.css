@@ -107,6 +107,13 @@ a, strong {
   }
 }
 
+/*** THEY TALK ***/
+@media screen and (min-width: 1025px) {
+  .theytalk {
+    text-align: center;
+  }
+}
+
 /*** VARIABLES ***/
 /*** MIXIN ***/
 /*** ------------------------- *** ------------------------- *** ------------------------- *** ------------------------- ***/
@@ -354,6 +361,7 @@ header {
 
 @media screen and (min-width: 1025px) {
   .testimonials-slider::before {
+    /* Overlay sui contenuti del blocco | Overlay on block contents */
     background: -webkit-gradient(linear, left top, right top, from(white), color-stop(20%, rgba(255, 255, 255, 0)), to(white));
     background: linear-gradient(to right, white, rgba(255, 255, 255, 0) 20% 80%, white);
     position: absolute;
@@ -662,6 +670,85 @@ body {
   }
   .testimonial-point {
     margin: 47px 5px 0 5px;
+  }
+}
+
+/*** THEY TALK ***/
+.theytalk {
+  padding: 57px 0 71px 0;
+}
+
+.theytalk h2 {
+  margin: 0 auto 43px auto;
+}
+
+.theytalk__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.theytalk__list_50row {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 50%;
+          flex: 1 50%;
+  margin-bottom: 20px;
+}
+
+.theytalk__list_33row {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 33%;
+          flex: 1 33%;
+  margin-bottom: 40px;
+}
+
+.theytalk__list_100row {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 100%;
+          flex: 1 100%;
+}
+
+@media screen and (min-width: 1025px) {
+  .theytalk {
+    padding: 57px 100px 69px 100px;
+  }
+  .theytalk h2 {
+    margin: 0 auto 58px auto;
+  }
+  .theytalk__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .theytalk__list_50row {
+    -webkit-box-flex: 1;
+        -ms-flex: auto;
+            flex: auto;
+    margin-bottom: 0;
+  }
+  .theytalk__list_33row {
+    -webkit-box-flex: 1;
+        -ms-flex: auto;
+            flex: auto;
+    margin-bottom: 0;
+  }
+  .theytalk__list_100row {
+    -webkit-box-flex: 1;
+        -ms-flex: auto;
+            flex: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */

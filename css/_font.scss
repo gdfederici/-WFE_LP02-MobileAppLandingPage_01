@@ -131,3 +131,10 @@ a, strong {
         text-align: center;
     }
 }
+
+/*** THEY TALK ***/
+@media screen and (min-width: $breakpoint) {
+    .theytalk {
+        text-align: center;
+    }
+}

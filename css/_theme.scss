@@ -217,7 +217,7 @@ header {
 }
 
 @media screen and (min-width: $breakpoint) {
-    .testimonials-slider::before {
+    .testimonials-slider::before { /* Overlay sui contenuti del blocco | Overlay on block contents */
         background: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0) 20% 80%, rgba(255,255,255,1));
         position: absolute;
         height: 100%;

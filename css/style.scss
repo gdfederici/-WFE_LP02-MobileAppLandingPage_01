@@ -247,3 +247,54 @@ body {
         margin: 47px 5px 0 5px;
     }
 }
+
+
+/*** THEY TALK ***/
+.theytalk {
+    padding: 57px 0 71px 0;
+    & h2 {
+        margin: 0 auto 43px auto;
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        &_50row {
+            flex: 1 50%;
+            margin-bottom: 20px;
+        }
+        &_33row {
+            flex: 1 33%;
+            margin-bottom: 40px;
+        }
+        &_100row {
+            flex: 1 100%;
+        }
+    }
+}
+
+@media screen and (min-width: $breakpoint) {
+    .theytalk {
+        padding: 57px 100px 69px 100px;
+        & h2 {
+            margin: 0 auto 58px auto;
+        }
+        &__list {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            &_50row {
+                flex: auto;
+                margin-bottom: 0;
+            }
+            &_33row {
+                flex: auto;
+                margin-bottom: 0;
+            }
+            &_100row {
+                flex: auto;
+            }
+        }
+    }
+}
