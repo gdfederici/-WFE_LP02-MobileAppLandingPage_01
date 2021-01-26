@@ -114,6 +114,11 @@ a, strong {
   }
 }
 
+/*** FOOTER ***/
+footer {
+  text-align: left;
+}
+
 /*** VARIABLES ***/
 /*** MIXIN ***/
 /*** ------------------------- *** ------------------------- *** ------------------------- *** ------------------------- ***/
@@ -823,6 +828,54 @@ body {
   .cta2_background {
     min-width: 0;
     min-height: 0;
+  }
+}
+
+/*** FOOTER ***/
+.footer {
+  padding: 41px 20px 45px 20px;
+}
+
+.footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 11px 0 34px 0;
+}
+
+.footer__social li {
+  margin-right: 17px;
+}
+
+.footer__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__nav li {
+  margin-right: 19px;
+}
+
+@media screen and (min-width: 1025px) {
+  .footer {
+    padding: 45px 0 47px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 1115px;
+  }
+  .footer__social {
+    margin: 0;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
 }
 /*# sourceMappingURL=style.css.map */

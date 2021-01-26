@@ -127,9 +127,15 @@ a, strong {
     }
 }
 
+
 /*** THEY TALK ***/
 @media screen and (min-width: $breakpoint) {
     .theytalk {
         text-align: center;
     }
+}
+
+/*** FOOTER ***/
+footer {
+    text-align: left;
 }

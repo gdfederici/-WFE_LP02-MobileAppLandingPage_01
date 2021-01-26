@@ -358,6 +358,38 @@ body {
             min-width: 0;
             min-height: 0;
         }
+    }
+}
 
+
+/*** FOOTER ***/
+.footer {
+    padding: 41px 20px 45px 20px;
+    &__social {
+        display: flex;
+        margin: 11px 0 34px 0;
+        & li {
+            margin-right: 17px;
+        }
+    }
+    &__nav {
+        display: flex;
+        & li {
+            margin-right: 19px;
+        }
+    }
+}
+
+@media screen and (min-width: $breakpoint) {
+    .footer {
+        padding: 45px 0 47px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 1115px;
+        &__social {
+            margin: 0;
+            order: 2;
+        }
     }
 }
