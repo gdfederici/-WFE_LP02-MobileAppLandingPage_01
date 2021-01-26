@@ -11,4 +11,4 @@ IT_ HTML, CSS (flexbox e metogologia BEM), SCSS, Figma, Trello, GitHub.<br/>
 EN_ HTML, CSS (flexbox and BEM methodology), SCSS, Figma, Trello, GitHub.<br/>
 
 ## Link:
-https://lp02-applandingpage01.netlify.app/<br/>
+https://lp02-applandingpage01.netlify.app/ <br/>
