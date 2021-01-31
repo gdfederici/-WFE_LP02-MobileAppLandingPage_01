@@ -467,11 +467,12 @@ body {
 
 @media screen and (min-width: $breakpoint) {
     .footer {
+        margin: 0 auto;
         padding: 45px 0 47px 0;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 1115px;
+        width: 1015px;
         &__social {
             margin: 0;
             order: 2;
