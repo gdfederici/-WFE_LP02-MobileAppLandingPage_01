@@ -35,13 +35,20 @@ $box-d: 1440px;
 body {
     margin: 0 auto 0 auto;
 }
-@media screen and (min-width: $breakpoint) {
+.learn-more {
+    display: block;
+}
+
+@media screen and (max-width: $box-m) {
+    body {
+        width: $box-m;
+    }
+}
+
+@media screen and (min-width: $box-d) {
     body {
         max-width: $box-d;
     }
-}
-.learn-more {
-    display: block;
 }
 
 
@@ -50,6 +57,7 @@ body {
     width: $box-m;
     margin: 0 auto;
 }
+
 @media screen and (min-width: $breakpoint) {
     .page-layout {
         width: 100%;
@@ -68,6 +76,7 @@ body {
         margin: 50px 0 0 0;
     }
 }
+
 @media screen and (min-width: $breakpoint) {
     .header {
         padding: 61px 163px 164px 163px;
@@ -75,14 +84,17 @@ body {
         & h1 {
             margin: 133px 0 30px 0;
         }
-        & p {
-            max-width: 453px;
-        }
         &__storedownload {
             & a:first-child {
                 margin-right: 36px;
             }
         }
+    }
+}
+
+@media screen and (min-width: $box-d) {
+    .header p {
+        max-width: 453px;
     }
 }
 
@@ -121,7 +133,6 @@ body {
         }
         & p {
             margin-bottom: 23px;
-            width: 407px;
         }
     }
     .what-it-does_demo {
@@ -131,26 +142,53 @@ body {
     }
 }
 
+@media screen and (min-width: $box-d) {
+    .what-it-does p {
+        max-width: 407px;
+    }
+}
+
 
 /*** GET STARTED ***/
 .get-started {
     padding: 62px 20px 594px 20px;
     & h2 {
         margin: 27px auto;
+        width: $box-m;
     }
     & p {
-        margin-bottom: 25px;
-        width: 320px;
+        margin: 0 auto 25px auto;
+        width: $box-m;
     }
 }
-@media screen and (min-width: $breakpoint) {
+
+@media screen and (max-width: $breakpoint-m) {
     .get-started {
-        padding: 217px 0px 171px 163px;
-        & p {
-            width: 480px;
+        & h2 {
+            width: auto;
+        }
+        p {
+            width: auto;
         }
     }
 }
+
+@media screen and (min-width: $breakpoint) {
+    .get-started {
+        padding: 217px 0px 171px 163px;
+        & h2 {
+            margin-left: 0;
+        }
+        & p {
+            margin-left: 0;
+            width: 480px;
+        }
+        & .learn-more {
+            margin-top: 54px;
+        }
+    }
+}
+
 
 /*** FEATURES ***/
 .features {
@@ -160,9 +198,17 @@ body {
     }
     & li {
         padding: 50px 0;
-        width: 311px;
     }
 }
+
+@media screen and (max-width: $breakpoint-m) {
+    .features {
+        & li {
+            width: 311px;
+        }
+    }
+}
+
 @media screen and (min-width: $breakpoint) {
     .features {
         padding: 76px 163px 66px 163px;
@@ -173,6 +219,19 @@ body {
             flex-wrap: wrap;
         }
         & li {
+            width: 30%;
+            padding-right: 5%;
+            &:nth-child(3n) {
+                padding-right: 0;
+                }
+        }
+    }
+}
+
+@media screen and (min-width: $box-d) {
+    .features {
+        & li {
+            width: 311px;
             padding-right: 87px;
             &:nth-child(3n) {
                 padding-right: 0;
@@ -238,6 +297,20 @@ body {
 }
 .testimonial-point {
     margin: 33px 5px 0 5px;
+}
+
+@media screen and (max-width: $breakpoint-m) {
+    .testimonials {
+        &-slider {
+            &__single {
+                min-width: 292px;
+                width: 292px;
+            }
+            &__nav_arrows {
+                min-width: 360px;
+            }
+        }
+    }
 }
 
 @media screen and (min-width: $breakpoint) {
@@ -339,6 +412,12 @@ body {
     }
 }
 
+@media screen and (max-width: $breakpoint-m) {
+    .cta2 {
+        width: 320px;
+    }
+}
+
 @media screen and (min-width: $breakpoint) {
     .cta2 {
         padding: 94px 0 85px 77px;
@@ -377,6 +456,12 @@ body {
         & li {
             margin-right: 19px;
         }
+    }
+}
+
+@media screen and (max-width: $breakpoint-m) {
+    .footer {
+        width: 320px;
     }
 }
 

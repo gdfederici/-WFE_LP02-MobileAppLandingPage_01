@@ -77,6 +77,7 @@ a {
 header {
     background-color: $color-back_header;
 }
+
 @media screen and (min-width: $breakpoint) {
     header {
         background: $color-back_header url("../img/frame_cta1.png") no-repeat right;
@@ -90,6 +91,7 @@ header {
     width: 100%;
     background-size: cover;
 }
+
 @media screen and (min-width: $breakpoint) {
     .what-it-does {
         background-color: $color-back_row1;
@@ -103,7 +105,13 @@ header {
 
 /*** GET STARTED ***/
 .get-started {
-    background: url("../img/frame_getstarted_m.jpg") no-repeat center bottom;
+    background: url("../img/frame_getstarted_m2.jpg") no-repeat right bottom;
+}
+
+@media screen and (max-width: 360px) {
+    .get-started {
+        background: url("../img/frame_getstarted_m.jpg") no-repeat center bottom;
+    }
 }
 @media screen and (min-width: $breakpoint) {
     .get-started {
@@ -142,6 +150,7 @@ header {
         background: url("../img/ico_personalize_blu.svg") no-repeat center top;
     }
 }
+
 @media screen and (min-width: $breakpoint) {
     .row_features {
         background: url("../img/back_features.jpg");
@@ -181,6 +190,7 @@ header {
         }
     }
 }
+
 @media screen and (max-width: 1440px) {
     .row_features {
         background-size: auto;
@@ -243,6 +253,7 @@ header {
     width: 100%;
     background-size: cover;
 }
+
 @media screen and (min-width: $breakpoint) {
     .cta2_background {
         background: url("../img/frame_cta2.png") no-repeat left;
