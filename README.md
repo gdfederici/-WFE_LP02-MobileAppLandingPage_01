@@ -11,7 +11,7 @@
 **EN_** HTML, CSS (flexbox and BEM methodology), SCSS, Figma, Trello, GitHub.<br/>
 
 ## Link:
-https://lp02-applandingpage01.netlify.app/ <br/>
+https://wfelp02-applandingpage01.netlify.app/ <br/>
 
 ## Note:
 **IT_** Primo utilizzo pratico di SCSS, li ho trovati più comodi nella scrittura e mantenimento del codice. Nessun problema durante l'utilizzo.<br/>
